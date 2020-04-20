@@ -10,7 +10,7 @@ const theme = {
     },
   },
 };
-export default function WelcomeScreen() {
+export default function WelcomeScreen({navigation}) {
   return (
     <View style={styles.container}>
       <Image source={splash} style={styles.bgImage} />
@@ -28,12 +28,11 @@ export default function WelcomeScreen() {
         iconRight
         buttonStyle={styles.actionButton}
         title="Get Started"
+        onPress={()=>navigation.navigate('Todo')}
       />
     </View>
   );
 }
-
-
 
 const styles = StyleSheet.create({
   container: {
