@@ -26,6 +26,7 @@ export default class Dates extends PureComponent {
                             onPress={onSelectDay}
                             onRender={onRenderDay}
                             key={index}
+                            activeColor={'#008800'}
                         />
                     </View>
                 )}

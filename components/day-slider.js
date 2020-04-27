@@ -2,13 +2,6 @@ import React from 'react';
 import moment from 'moment';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import Dates from './dates';
-const theme = {
-    Button: {
-        titleStyle: {
-            color: '#fff',
-        },
-    },
-};
 
 export default class DaySlider extends React.Component {
     state = {};

@@ -1,15 +1,9 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
-import { Button, ThemeProvider } from 'react-native-elements';
+import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import splash from '../assets/splash.png';
-const theme = {
-  Button: {
-    titleStyle: {
-      color: '#fff',
-    },
-  },
-};
+
 export default function WelcomeScreen({navigation}) {
   return (
     <View style={styles.container}>
@@ -28,7 +22,7 @@ export default function WelcomeScreen({navigation}) {
         iconRight
         buttonStyle={styles.actionButton}
         title="Get Started"
-        onPress={()=>navigation.navigate('Todo')}
+        onPress={()=>navigation.navigate('Location')}
       />
     </View>
   );

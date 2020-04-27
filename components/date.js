@@ -3,12 +3,11 @@ import {
     Text,
     TouchableOpacity,
 } from 'react-native';
-import moment from 'moment';
 
 export default class Date extends PureComponent {
     getContainerStyle = () => ({
         ...styles.container,
-        ...(this.props.isActive ? styles.containerActive : {})
+        ...(this.props.isActive ? {...styles.containerActive,backgroundColor:this.props.activeColor} : {})
     });
 
     getDayStyle = () => ({
