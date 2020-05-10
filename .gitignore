@@ -10,6 +10,7 @@ npm-debug.*
 web-build/
 web-report/
 constraints/secret.js
+constraints/firebase.config.js
 
 # macOS
 .DS_Store
